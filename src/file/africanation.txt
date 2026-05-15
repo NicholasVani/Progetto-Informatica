@@ -52,4 +52,4 @@ Namibia;Namibia.png
 Sudafrica;Sudafrica.png
 Swaziland;Swaziland.png
 Zambia;Zambia.png
-Zimbabwe;Zimbabwe.
+Zimbabwe;Zimbabwe.png
