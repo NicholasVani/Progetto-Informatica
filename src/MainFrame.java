@@ -128,8 +128,8 @@ public class MainFrame extends JFrame {
                 break;
             // Aggiungi altri case per gli altri continenti con le rispettive classi frame
             case "Asia":
-                JOptionPane.showMessageDialog(this, "Asia ancora non implementata", "Informazione", JOptionPane.INFORMATION_MESSAGE);
-                // continentFrame = new AsiaFrame(this);
+                //JOptionPane.showMessageDialog(this, "Asia ancora non implementata", "Informazione", JOptionPane.INFORMATION_MESSAGE);
+                continentFrame = new AsiaFrame(this);
                 break;
             case "Africa":
                 JOptionPane.showMessageDialog(this, "Africa ancora non implementata", "Informazione", JOptionPane.INFORMATION_MESSAGE);
