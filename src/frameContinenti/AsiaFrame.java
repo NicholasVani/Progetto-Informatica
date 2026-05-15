@@ -84,21 +84,53 @@ public class AsiaFrame extends JFrame {
                 super.paintComponent(g);
                 FunzioniFrame.disegnaImmagine(g, immagine, getWidth(), getHeight());
 
-                int width = getWidth();
-                int height = getHeight();
+                int x = getWidth();
+                int y = getHeight();
 
-                /*btnArgentina.setBounds((int) (width * 0.48), (int) (height * 0.70), 15, 15);// coordinate del quadratino
-                btnBrasile.setBounds((int) (width * 0.58), (int) (height * 0.30), 15, 15);// height più aumenta piu in basso , width piu aumenta piu a destra
-                btnCile.setBounds((int) (width * 0.42), (int) (height * 0.61), 15, 15);
-                btnPeru.setBounds((int) (width * 0.33), (int) (height * 0.31), 15, 15);
-                btnColombia.setBounds((int) (width * 0.36), (int) (height * 0.15), 15, 15);
-                btnVenezuela.setBounds((int) (width * 0.43), (int) (height * 0.07), 15, 15);
-                btnEcuador.setBounds((int) (width * 0.30), (int) (height * 0.20), 15, 15);
-                btnBolivia.setBounds((int) (width * 0.47), (int) (height * 0.42), 15, 15);
-                btnParaguay.setBounds((int) (width * 0.54), (int) (height * 0.51), 15, 15);
-                btnUruguay.setBounds((int) (width * 0.56), (int) (height * 0.63), 15, 15);
-                btnGuyana.setBounds((int) (width * 0.50), (int) (height * 0.09), 15, 15);
-                btnSuriname.setBounds((int) (width * 0.53), (int) (height * 0.10), 15, 15);*/
+                btnCina.setBounds((int) (x * 0.68), (int) (y * 0.50), 15, 15);
+                btnGiappone.setBounds((int) (x * 0.85), (int) (y * 0.48), 15, 15);
+                btnCoreadelNord.setBounds((int) (x * 0.75), (int) (y * 0.45), 15, 15);
+                btnCoreadelSud.setBounds((int) (x * 0.77), (int) (y * 0.48), 15, 15);
+                btnMongolia.setBounds((int) (x * 0.60), (int) (y * 0.38), 15, 15);
+                btnTaiwan.setBounds((int) (x * 0.75), (int) (y * 0.62), 15, 15);
+                btnAfghanistan.setBounds((int) (x * 0.30), (int) (y * 0.50), 15, 15);
+                btnBangladesh.setBounds((int) (x * 0.51), (int) (y * 0.63), 15, 15);
+                btnBhutan.setBounds((int) (x * 0.51), (int) (y * 0.58), 15, 15);
+                btnIndia.setBounds((int) (x * 0.40), (int) (y * 0.57), 15, 15);
+                btnMaldive.setBounds((int) (x * 0.38), (int) (y * 0.84), 15, 15);
+                btnNepal.setBounds((int) (x * 0.45), (int) (y * 0.57), 15, 15);
+                btnPakistan.setBounds((int) (x * 0.32), (int) (y * 0.57), 15, 15);
+                btnSriLanka.setBounds((int) (x * 0.44), (int) (y * 0.80), 15, 15);
+                btnBrunei.setBounds((int) (x * 0.72), (int) (y * 0.82), 15, 15);
+                btnCambogia.setBounds((int) (x * 0.63), (int) (y * 0.73), 15, 15);
+                btnFilippine.setBounds((int) (x * 0.75), (int) (y * 0.70), 15, 15);
+                btnIndonesia.setBounds((int) (x * 0.62), (int) (y * 0.90), 15, 15);
+                btnLaos.setBounds((int) (x * 0.60), (int) (y * 0.67), 15, 15);
+                btnMalaysia.setBounds((int) (x * 0.61), (int) (y * 0.83), 15, 15);
+                btnSingapore.setBounds((int) (x * 0.63), (int) (y * 0.86), 15, 15);
+                btnMyanmar.setBounds((int) (x * 0.55), (int) (y * 0.63), 15, 15);
+                btnThailandia.setBounds((int) (x * 0.60), (int) (y * 0.70), 15, 15);
+                btnVietnam.setBounds((int) (x * 0.66), (int) (y * 0.73), 15, 15);
+                btnArabiaSaudita.setBounds((int) (x * 0.10), (int) (y * 0.57), 15, 15);
+                btnBahrain.setBounds((int) (x * 0.19), (int) (y * 0.59), 10, 10);
+                btnCipro.setBounds((int) (x * 0.05), (int) (y * 0.50), 10, 10);
+                btnEmiratiArabiUniti.setBounds((int) (x * 0.22), (int) (y * 0.62), 15, 15);
+                btnIran.setBounds((int) (x * 0.20), (int) (y * 0.50), 15, 15);
+                btnIraq.setBounds((int) (x * 0.13), (int) (y * 0.51), 15, 15);
+                btnIsraele.setBounds((int) (x * 0.07), (int) (y * 0.53), 15, 15);
+                btnGiordania.setBounds((int) (x * 0.08), (int) (y * 0.55), 15, 15);
+                btnKuwait.setBounds((int) (x * 0.17), (int) (y * 0.56), 10, 10);
+                btnLibano.setBounds((int) (x * 0.07), (int) (y * 0.51), 10, 10);
+                btnOman.setBounds((int) (x * 0.25), (int) (y * 0.65), 15, 15);
+                btnQatar.setBounds((int) (x * 0.20), (int) (y * 0.61), 10, 10);
+                btnSiria.setBounds((int) (x * 0.09), (int) (y * 0.50), 15, 15);
+                btnTurchia.setBounds((int) (x * 0.05), (int) (y * 0.45), 15, 15);
+                btnYemen.setBounds((int) (x * 0.15), (int) (y * 0.72), 15, 15);
+                btnKazakistan.setBounds((int) (x * 0.30), (int) (y * 0.35), 15, 15);
+                btnKirghizistan.setBounds((int) (x * 0.35), (int) (y * 0.43), 15, 15);
+                btnTagikistan.setBounds((int) (x * 0.35), (int) (y * 0.46), 15, 15);
+                btnTurkmenistan.setBounds((int) (x * 0.25), (int) (y * 0.45), 15, 15);
+                btnUzbekistan.setBounds((int) (x * 0.27), (int) (y * 0.41), 15, 15);
                 
 
             }
