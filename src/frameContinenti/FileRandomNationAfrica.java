@@ -2,10 +2,7 @@ package frameContinenti;
 
 import java.util.*;
 import java.io.*;
-/**
- *
- * @author Nicholas Vani & Vincenzo Spina
- */
+
 class FileRandomNationAfrica {
     public String imageFolder = "src/images/flagsAfrica/";
     

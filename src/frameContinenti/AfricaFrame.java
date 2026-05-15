@@ -13,7 +13,7 @@ import java.util.Set;
 
 /**
  *
- * @author Nicholas Vani & Vincenzo Spina
+ * @author orazi
  */
 public class AfricaFrame extends JFrame {
      private BufferedImage immagine;
@@ -36,13 +36,12 @@ public class AfricaFrame extends JFrame {
     private Thread timerThread;
     private int timeInSeconds = 0;
     private JLabel timerLabel;
-    
-    private JButton btnAntiguaEBarbuda, btnBahamas, btnBarbados , btnBelize, btnCanada, btnCostaRica, btnCuba;
-    private JButton btnDominica, btnElSalvador, btnGiamaica, btnGrenada, btnGroenlandia, btnGuatemala, btnHaiti;
-    private JButton btnHonduras, btnMessico, btnNicaragua, btnPanama, btnPortoRico, btnRepubblicaDominicana;
-    private JButton btnSaintKittsENevis, btnSaintLucia, btnSaintVincentEGrenadine, btnStatiUniti, btnTrinidadETobago;
 
- 
+    private JButton btnBrasile, btnArgentina, btnCile, btnPeru, btnColombia, btnVenezuela;
+    private JButton btnEcuador, btnBolivia, btnParaguay, btnUruguay, btnGuyana, btnSuriname;
+
+    
+    
     public AfricaFrame(JFrame parentFrame) {
         this.parentFrame = parentFrame;
         setTitle("Africa");
@@ -87,94 +86,56 @@ public class AfricaFrame extends JFrame {
                 int width = getWidth();
                 int height = getHeight();
 
-                /*btnAntiguaEBarbuda.setBounds((int) (width * 0.77), (int) (height * 0.78), 5, 5);
-                btnBahamas.setBounds((int) (width * 0.65), (int) (height * 0.70), 15, 15);
-                btnBarbados.setBounds((int) (width * 0.78), (int) (height * 0.82), 5, 5);
-                btnBelize.setBounds((int) (width * 0.57), (int) (height * 0.78), 15, 15);
-                btnCanada.setBounds((int) (width * 0.62), (int) (height * 0.50), 15, 15);
-                btnCostaRica.setBounds((int) (width * 0.60), (int) (height * 0.85), 15, 15);
-                btnCuba.setBounds((int) (width * 0.63), (int) (height * 0.72), 15, 15);
-                btnDominica.setBounds((int) (width * 0.76), (int) (height * 0.80), 5, 5);
-                btnElSalvador.setBounds((int) (width * 0.56), (int) (height * 0.81), 15, 15);
-                btnGiamaica.setBounds((int) (width * 0.65), (int) (height * 0.77), 15, 15);
-                btnGrenada.setBounds((int) (width * 0.77), (int) (height * 0.83), 5, 5);
-                btnGroenlandia.setBounds((int) (width * 0.80), (int) (height * 0.30), 15, 15);
-                btnGuatemala.setBounds((int) (width * 0.55), (int) (height * 0.79), 15, 15);
-                btnHaiti.setBounds((int) (width * 0.68), (int) (height * 0.76), 15, 15);
-                btnHonduras.setBounds((int) (width * 0.59), (int) (height * 0.79), 15, 15);
-                btnMessico.setBounds((int) (width * 0.47), (int) (height * 0.75), 15, 15);
-                btnNicaragua.setBounds((int) (width * 0.59), (int) (height * 0.82), 15, 15);
-                btnPanama.setBounds((int) (width * 0.62), (int) (height * 0.86), 15, 15);
-                btnPortoRico.setBounds((int) (width * 0.73), (int) (height * 0.76), 15, 15);
-                btnRepubblicaDominicana.setBounds((int) (width * 0.70), (int) (height * 0.76), 15, 15);
-                btnSaintKittsENevis.setBounds((int) (width * 0.75), (int) (height * 0.78), 5, 5);
-                btnSaintLucia.setBounds((int) (width * 0.77), (int) (height * 0.81), 5, 5);
-                btnSaintVincentEGrenadine.setBounds((int) (width * 0.77), (int) (height * 0.82), 5, 5); 
-                btnStatiUniti.setBounds((int) (width * 0.50), (int) (height * 0.60), 15, 15); 
-                btnTrinidadETobago.setBounds((int) (width * 0.77), (int) (height * 0.84), 5, 5);*/
+                /*btnArgentina.setBounds((int) (width * 0.48), (int) (height * 0.70), 15, 15);// coordinate del quadratino
+                btnBrasile.setBounds((int) (width * 0.58), (int) (height * 0.30), 15, 15);// height più aumenta piu in basso , width piu aumenta piu a destra
+                btnCile.setBounds((int) (width * 0.42), (int) (height * 0.61), 15, 15);
+                btnPeru.setBounds((int) (width * 0.33), (int) (height * 0.31), 15, 15);
+                btnColombia.setBounds((int) (width * 0.36), (int) (height * 0.15), 15, 15);
+                btnVenezuela.setBounds((int) (width * 0.43), (int) (height * 0.07), 15, 15);
+                btnEcuador.setBounds((int) (width * 0.30), (int) (height * 0.20), 15, 15);
+                btnBolivia.setBounds((int) (width * 0.47), (int) (height * 0.42), 15, 15);
+                btnParaguay.setBounds((int) (width * 0.54), (int) (height * 0.51), 15, 15);
+                btnUruguay.setBounds((int) (width * 0.56), (int) (height * 0.63), 15, 15);
+                btnGuyana.setBounds((int) (width * 0.50), (int) (height * 0.09), 15, 15);
+                btnSuriname.setBounds((int) (width * 0.53), (int) (height * 0.10), 15, 15);*/
                 
 
             }
         };
         pannelloImmagine.setPreferredSize(new Dimension(800, 600));
-        
-        /*btnAntiguaEBarbuda= new JButton("");
-        btnBahamas = new JButton("");
-        btnBarbados = new JButton("");
-        btnBelize = new JButton("");
-        btnCanada = new JButton("");
-        btnCostaRica = new JButton("");
-        btnCuba = new JButton("");
-        btnDominica = new JButton("");
-        btnElSalvador = new JButton("");
-        btnGiamaica = new JButton("");
-        btnGrenada = new JButton("");
-        btnGroenlandia = new JButton("");
-        btnGuatemala = new JButton("");
-        btnHaiti = new JButton("");
-        btnHonduras = new JButton("");
-        btnMessico = new JButton("");
-        btnNicaragua = new JButton("");
-        btnPanama = new JButton("");
-        btnPortoRico = new JButton("");
-        btnRepubblicaDominicana = new JButton("");
-        btnSaintKittsENevis = new JButton("");
-        btnSaintLucia = new JButton("");
-        btnSaintVincentEGrenadine = new JButton("");
-        btnStatiUniti = new JButton("");
-        btnTrinidadETobago = new JButton("");*/
+
+        btnArgentina = new JButton("");
+        btnBrasile = new JButton("");
+        btnCile = new JButton("");
+        btnPeru = new JButton("");
+        btnColombia = new JButton("");
+        btnVenezuela= new JButton("");
+        btnEcuador= new JButton("");
+        btnBolivia= new JButton("");
+        btnParaguay= new JButton("");
+        btnUruguay= new JButton("");
+        btnGuyana= new JButton("");
+        btnSuriname= new JButton("");
         
         for (JButton button : new JButton[]{
-            btnAntiguaEBarbuda, btnBahamas, btnBarbados , btnBelize, btnCanada, btnCostaRica, btnCuba, btnDominica, btnElSalvador, btnGiamaica, btnGrenada, btnGroenlandia, btnGuatemala, btnHaiti, btnHonduras, btnMessico, btnNicaragua, btnPanama, btnPortoRico, btnRepubblicaDominicana, btnSaintKittsENevis, btnSaintLucia, btnSaintVincentEGrenadine, btnStatiUniti, btnTrinidadETobago}) {
+            btnArgentina,btnBrasile,btnCile, btnPeru, btnColombia, btnVenezuela, btnEcuador, btnBolivia, btnParaguay, btnUruguay, btnGuyana, btnSuriname}) {
             
             pannelloImmagine.add(button);
         }
 
-        /*FunzioniFrame.impostaPulsanteNazione(btnAntiguaEBarbuda, "Antigua e Barbuda", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnBahamas, "Bahamas", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnBarbados, "Barbados", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnBelize, "Belize", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnCanada, "Canada", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnCostaRica, "Costa Rica", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnCuba, "Cuba", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnDominica, "Dominica", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnElSalvador, "El Salvador", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnGiamaica, "Giamaica", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnGrenada, "Grenada", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnGroenlandia, "Groenlandia", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnGuatemala, "Guatemala", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnHaiti, "Haiti", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnHonduras, "Honduras", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnMessico, "Messico", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnNicaragua, "Nicaragua", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnPanama, "Panama", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnPortoRico, "Porto Rico", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnRepubblicaDominicana, "Repubblica Dominicana", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnSaintKittsENevis, "Saint Kitts e Nevis", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnSaintLucia, "Saint Lucia", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnSaintVincentEGrenadine, "Saint Vincent e Grenadine", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnStatiUniti, "Stati Uniti d'America", randomNation != null ? randomNation.getNameNation() : "");
-        FunzioniFrame.impostaPulsanteNazione(btnTrinidadETobago, "Trinidad e Tobago", randomNation != null ? randomNation.getNameNation() : "");*/
+        
+        FunzioniFrame.impostaPulsanteNazione(btnArgentina, "Argentina", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnBrasile, "Brasile", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnCile, "Cile", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnPeru, "Perù", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnColombia, "Colombia", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnVenezuela, "Venezuela", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnEcuador, "Ecuador", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnBolivia, "Bolivia", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnParaguay, "Paraguay", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnUruguay, "Uruguay", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnGuyana, "Guyana", randomNation != null ? randomNation.getNameNation() : "");
+        FunzioniFrame.impostaPulsanteNazione(btnSuriname, "Suriname", randomNation != null ? randomNation.getNameNation() : "");
 
 
 
@@ -345,7 +306,7 @@ public class AfricaFrame extends JFrame {
 
         // Aggiorna lo stato dei pulsanti
         for (JButton button : new JButton[]{
-                btnAntiguaEBarbuda, btnBahamas, btnBarbados , btnBelize, btnCanada, btnCostaRica, btnCuba, btnDominica, btnElSalvador, btnGiamaica, btnGrenada, btnGroenlandia, btnGuatemala, btnHaiti, btnHonduras, btnMessico, btnNicaragua, btnPanama, btnPortoRico, btnRepubblicaDominicana, btnSaintKittsENevis, btnSaintLucia, btnSaintVincentEGrenadine, btnStatiUniti, btnTrinidadETobago
+                btnArgentina,btnBrasile,btnCile, btnPeru, btnColombia, btnVenezuela, btnEcuador, btnBolivia, btnParaguay, btnUruguay, btnGuyana, btnSuriname
         }) {
             String buttonNationName = button.getText();
 
